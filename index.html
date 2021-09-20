@@ -257,6 +257,23 @@
       margin-top: -50px;
       margin-left: 20px;
     }
+    
+    [data-tooltip-lang]:before {
+      content: attr(data-tooltip);
+      position: absolute;
+      opacity: 0;
+      transition: all 0.3s ease;
+      padding: 10px;
+      color: #fff;
+      pointer-events: none;
+    }
+
+    [data-tooltip-lang]:hover:before {
+      opacity: 1;
+      background: #0069af;
+      margin-top: 50px;
+      margin-left: -20px;
+    }
 
     @media (min-width: 600px) {
       body {
@@ -312,7 +329,7 @@
 <body>
   <div class="lang-se">
     <div class="card">
-      <a class="lang-btn" data-tooltip="English" aria-label="English" id="seBtn"><i
+      <a class="lang-btn" data-tooltip-lang="English" aria-label="English" id="seBtn"><i
           class="fas fa-globe"></i></a>
       <div class="profile-sidebar">
         <img class="portrait"
@@ -457,7 +474,7 @@
 
   <div class="lang-en">
     <div class="card">
-      <a class="lang-btn" data-tooltip="Svenska" aria-label="Svenska" id="enBtn"><i
+      <a class="lang-btn" data-tooltip-lang="Svenska" aria-label="Svenska" id="enBtn"><i
           class="fas fa-globe"></i></a>
       <div class="profile-sidebar">
         <img class="portrait"
