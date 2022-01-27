@@ -1,9 +1,9 @@
 .lang-se {
-  display: contents;
+  display: none;
 }
 
 .lang-en {
-  display: none;
+  display: contents;
 }
 
 .lang-btn {
