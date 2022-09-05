@@ -101,11 +101,14 @@ body {
   width: max-content;
   margin: 0 auto;
 }
+
 .social-list-wrapper{
   display: grid;
-  grid-auto-flow: row;
+  grid-auto-flow: column;
   place-items: center;
+  column-gap: 0.5rem;
 }
+
 .social-list-icons {
   list-style: none;
   width: auto;
