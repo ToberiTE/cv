@@ -103,10 +103,8 @@ body {
 }
 
 .social-list-wrapper{
-  display: grid;
-  grid-auto-flow: column;
-  place-items: center;
-  column-gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .social-list-icons {
