@@ -92,8 +92,8 @@ body {
 }
 
 .social-list {
-  gap: 0.2rem;
-  display: grid;
+  gap: 0.5rem;
+  display: flex;
   list-style: none;
   width: max-content;
   margin: 0 auto;
@@ -104,8 +104,9 @@ body {
   display: flex;
   list-style: none;
   outline: none;
-  margin: 0 auto;
+  margin: 1rem 0;
   gap: 0.5rem;
+  padding: 0;
 }
 
 .social-list-icons i {
