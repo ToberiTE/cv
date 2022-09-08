@@ -100,17 +100,12 @@ body {
   padding: 0;
 }
 
-.social-list-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .social-list-icons {
   display: flex;
   list-style: none;
   outline: none;
+  margin: 0 auto;
+  gap: 0.5rem;
 }
 
 .social-list-icons i {
