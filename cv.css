@@ -91,20 +91,18 @@ body {
   letter-spacing: 1px;
 }
 
+.social-list-wrapper{
+  display: grid;
+  place-items: center;
+}
+
 .social-list {
   gap: 0.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
   list-style: none;
   padding: 0;
   width: max-content;
   margin: 0 auto;
-}
-
-.social-list-wrapper{
-  display: flex;
-  flex-direction: column;
 }
 
 .social-list-icons {
