@@ -97,12 +97,14 @@ body {
   list-style: none;
   width: max-content;
   margin: 0 auto;
+  padding: 0;
 }
 
 .social-list-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .social-list-icons {
