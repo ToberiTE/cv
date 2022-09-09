@@ -92,7 +92,7 @@ body {
 }
 
 .social-list {
-  gap: 0.5rem;
+  gap: 0.25rem;
   display: flex;
   list-style: none;
   width: max-content;
