@@ -109,6 +109,8 @@ body {
   margin: 1rem 0;
   gap: 0.5rem;
   padding: 0;
+  justify-content: space-evenly;
+  width: max-content;
 }
 
 .social-list-icons i {
