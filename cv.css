@@ -279,7 +279,9 @@ span {
     flex-direction: column;
     margin-bottom: 0.8rem;
   }
-
+.social-list-icons {
+    gap: 0.25rem;
+  }
   .social-item {
     padding: 0.2rem;
     width: max-content;
