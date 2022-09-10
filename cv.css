@@ -94,6 +94,8 @@ body {
 .social-list {
   gap: 0.25rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   list-style: none;
   width: max-content;
   margin: 0 auto;
