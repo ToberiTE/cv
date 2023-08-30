@@ -224,22 +224,22 @@
         }
 
 [data-tooltip]:before {
-  content: attr(data-tooltip);
-  position: absolute;
-  opacity: 0;
-  transition: all 0.3s ease;
-  padding: 10px;
-  color: #fff;
-  pointer-events: none;
-  z-index: 2;
-}
+            content: attr(data-tooltip);
+            position: absolute;
+            opacity: 0;
+            transition: all 0.3s ease;
+            padding: 10px;
+            color: #fff;
+            pointer-events: none;
+            z-index: 2;
+        }
 
-[data-tooltip]:hover:before {
-  opacity: 1;
-  background: #0069af;
-  margin-top: -50px;
-  margin-left: 20px;
-}
+        [data-tooltip]:hover:before {
+            opacity: 1;
+            background: #424242;
+            margin-top: -50px;
+            margin-left: 20px;
+        }
 
 [data-tooltip-lang]:before {
   content: attr(data-tooltip-lang);
@@ -254,7 +254,7 @@
 
 [data-tooltip-lang]:hover:before {
   opacity: 1;
-  background: #0069af;
+  background: #424242;
   margin-top: 50px;
   margin-left: -50px;
 }
