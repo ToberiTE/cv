@@ -8,7 +8,7 @@
 
 .lang-btn {
     opacity: .5;
-    position: absolute;
+    position: fixed;
     font-size: 1.5rem;
     top: 0.5rem;
     padding: 0;
