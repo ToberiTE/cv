@@ -236,10 +236,12 @@ span {
     grid-auto-flow: dense;
     place-items: center;
     gap: 2rem;
+    padding-inline: 1rem;
   }
 
   header article * {
     place-self: center;
+    text-align: center;
   }
 
   article h1::after {
