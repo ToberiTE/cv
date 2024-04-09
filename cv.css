@@ -235,6 +235,14 @@ span {
   header {
     grid-auto-flow: dense;
     place-items: center;
-    gap: 4rem;
+    gap: 2rem;
+  }
+
+  header article * {
+    place-self: center;
+  }
+
+  article h1::after {
+    margin-inline: auto;
   }
 }
