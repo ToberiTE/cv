@@ -253,22 +253,46 @@ span {
   @page {
     margin: 0;
   }
+
   body {
-    margin: 1.6cm;
+    margin: 2cm;
   }
+
   * {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
-  nav {
+
+  nav,
+  .social-media,
+  .link {
     display: none;
   }
-  .social-media {
-    display: none;
-  }
+
   article {
     break-inside: avoid;
     break-before: always;
   }
+
+  header {
+    grid-auto-flow: dense;
+    place-items: center;
+    gap: 2rem;
+    padding-inline: 1rem;
+  }
+
+  header article * {
+    place-self: center;
+    text-align: center;
+  }
+
+  article h1::after {
+    margin-inline: auto;
+  }
+
+  h2 {
+    margin-top: 1rem;
+  }
+
   h2,
   h4 {
     break-before: always;
@@ -277,7 +301,17 @@ span {
   li {
     break-inside: avoid;
   }
-  .link {
-    display: none;
+  section ul li {
+    margin-block: 0.5rem !important;
+  }
+
+  h2,
+  h4,
+  ul,
+  section,
+  article {
+    margin: 0;
+    padding: 0;
+    gap: 0;
   }
 }
