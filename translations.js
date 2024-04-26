@@ -37,7 +37,6 @@ const translations = {
     16: "Utveckling av webbapplikation för kunder att prenumerera på driftinformation inom utbud av företagstjänster.",
     17: "Utveckling av windows applikation för hantering av projekt och affärsdata.",
     18: "Projekt, NetViz.",
-    19: "Nov 2023 - Pågående",
     20: "Webbaserad nätverksskanner integrerad med Nmap.",
     21: "Skanna och visualisera nätverk och visa detaljer om anslutna enheter.",
     22: `React &bull;
@@ -53,7 +52,6 @@ const translations = {
     Nätverksteknik &bull;
     Cybersäkerhet`,
     23: "Projekt, Vision.",
-    24: "Jul 2023 - Pågående",
     25: "Datadriven och användarvänlig SaaS applikation byggd på Azure plattformen för att visualisera data på olika vis och med stöd av ML skapa dataprognoser. Demo finns tillgänglig på länk nedan, meddela om intresse.",
     26: `Öppna i ny flik <i class="fas fa-external-link-alt"></i>`,
     27: "Licenser och certifikat",
@@ -138,7 +136,6 @@ const translations = {
     16: "Development of web application for customers to subscribe to receive operational information about company services.",
     17: "Development of windows application for managing projects and business data.",
     18: "Project, NetViz.",
-    19: "Nov 2023 - Ongoing",
     20: "Web based network scanner integrated with Nmap.",
     21: "Scan and visualize networks and view details about connected devices.",
     22: `React &bull;
@@ -154,7 +151,6 @@ const translations = {
     Network technology &bull;
     Cybersecurity`,
     23: "Project, Vision.",
-    24: "Jul 2023 - Ongoing",
     25: "Data-driven and user-friendly SaaS application built on the Azure platform to visualize data in different ways and create data forecasts with the support of ML. Demo is available at the link below, let me know if you are interested.",
     26: `Open in new tab <i class="fas fa-external-link-alt"></i>`,
     27: "Licenses and certificates",

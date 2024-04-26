@@ -19,6 +19,11 @@ nav {
   gap: 0.25rem;
   top: 1.25rem;
   right: 1.5rem;
+
+  & a {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
 
 nav,
@@ -40,11 +45,6 @@ header section,
 .social-media,
 .content {
   gap: 1rem;
-}
-
-nav a {
-  font-size: 1.5rem;
-  cursor: pointer;
 }
 
 main {
@@ -72,14 +72,26 @@ header {
   place-content: center;
   text-align: center;
   margin-bottom: 2rem;
+
+  & article {
+    place-items: start;
+  }
+
+  & h2 {
+    text-transform: uppercase;
+    font-size: 0.925rem;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+  }
+
+  & section {
+    align-items: start;
+    text-align: start;
+  }
 }
 
 aside img {
   height: 140px;
-}
-
-header article {
-  place-items: start;
 }
 
 header article *,
@@ -106,28 +118,16 @@ h5 {
 
 article h1 {
   font-size: 1.8rem;
-}
 
-article h1::after {
-  content: "";
-  display: block;
-  margin-block: 0.45em;
-  height: 1px;
-  width: 3em;
-  background-color: var(--divider);
-  opacity: 0.35;
-}
-
-header h2 {
-  text-transform: uppercase;
-  font-size: 0.925rem;
-  letter-spacing: 3px;
-  margin-bottom: 2em;
-}
-
-header section {
-  align-items: start;
-  text-align: start;
+  &::after {
+    content: "";
+    display: block;
+    margin-block: 0.45em;
+    height: 1px;
+    width: 3em;
+    background-color: var(--divider);
+    opacity: 0.35;
+  }
 }
 
 .contact-info {
@@ -140,43 +140,46 @@ header section {
   display: flex;
   justify-content: center;
   padding: 1rem 0 0 0;
+
+  & i {
+    font-size: 1.8rem;
+  }
 }
 
-.social-media i {
-  font-size: 1.8rem;
+.print-link {
+  display: none;
 }
 
 a {
   text-decoration: none;
   color: var(--body-primary);
   outline: none;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.5;
+  }
 }
 
 aside a {
   letter-spacing: 0.04rem;
 }
 
-a:hover,
-a:focus,
-a:active::after {
-  opacity: 0.5;
-}
-
 .content {
   max-width: 900px;
-}
 
-.content h2 {
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  line-height: 1.1;
-  padding: 1rem 0;
-}
+  & h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    padding: 1rem 0;
+  }
 
-.content p {
-  font-size: 1rem;
-  margin-block: 0.75rem;
+  & p {
+    font-size: 1rem;
+    margin-block: 0.75rem;
+  }
 }
 
 ul {
@@ -221,10 +224,10 @@ span {
   display: block;
   width: fit-content;
   padding: 0.25rem 1rem;
-}
 
-.link i {
-  margin-left: 0.25rem;
+  & i {
+    margin-left: 0.25rem;
+  }
 }
 
 .fa-external-link-alt {
@@ -237,11 +240,11 @@ span {
     place-items: center;
     gap: 2rem;
     padding-inline: 1rem;
-  }
 
-  header article * {
-    place-self: center;
-    text-align: center;
+    & article * {
+      place-self: center;
+      text-align: center;
+    }
   }
 
   article h1::after {
@@ -254,63 +257,81 @@ span {
     margin: 0;
   }
 
-  body {
-    margin: 2cm;
+  section {
+    margin-inline: 1.6cm;
+  }
+
+  header {
+    width: 95%;
+    margin-top: 2rem;
+
+    article h1::after {
+      margin-left: 0;
+    }
   }
 
   * {
-    font-size: 14px !important;
+    font-size: 14px;
   }
 
   nav,
-  .social-media,
   .link {
     display: none;
   }
 
+  .contact-info,
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.25rem;
+    margin-left: 2rem;
+  }
+
+  .default-link {
+    display: none;
+  }
+
+  i {
+    font-size: 16px !important;
+  }
+
+  .print-link {
+    display: initial;
+  }
+
   article {
     break-inside: avoid;
-    break-before: always;
-  }
 
-  header {
-    grid-auto-flow: dense;
-    place-items: center;
-    gap: 2rem;
-    padding-inline: 1rem;
-  }
-
-  header article * {
-    place-self: center;
-    text-align: center;
-  }
-
-  article h1::after {
-    margin-inline: auto;
+    & h1::after {
+      margin-inline: auto;
+    }
   }
 
   section h2 {
-    margin-top: 1rem !important;
+    font-size: 15px;
+    margin-block: 0.5rem;
   }
 
-  h2,
-  h4 {
-    break-before: always;
-  }
+  .content article:nth-of-type(3) ul {
+    gap: 0.5rem;
 
-  li {
-    break-inside: avoid;
+    & li {
+      margin-block: 0;
+    }
   }
 
   section ul li {
-    margin-block: 0.5rem !important;
+    margin-block: 0.45rem;
+  }
+
+  .content article:first-child::after {
+    display: none;
   }
 
   h2,
   h4,
-  ul,
-  section,
-  article {
+  ul {
     margin: 0;
     padding: 0;
     gap: 0;
