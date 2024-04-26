@@ -248,3 +248,36 @@ span {
     margin-inline: auto;
   }
 }
+
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 1.6cm;
+  }
+  * {
+    font-size: 12px !important;
+  }
+  nav {
+    display: none;
+  }
+  .social-media {
+    display: none;
+  }
+  article {
+    break-inside: avoid;
+    break-before: always;
+  }
+  h2,
+  h4 {
+    break-before: always;
+  }
+
+  li {
+    break-inside: avoid;
+  }
+  .link {
+    display: none;
+  }
+}
