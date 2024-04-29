@@ -245,6 +245,10 @@ span {
       place-self: center;
       text-align: center;
     }
+
+    & section {
+      padding-top: 2rem;
+    }
   }
 
   article h1::after {
