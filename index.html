@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tobias Eriksson - Fullstack Web & Software developer, DevOps Engineer, UI/UX enthusiast." />
-    <title>CV - Tobias Eriksson</title>
+    <meta name="description" content="Tobias Eriksson - Fullstack developer, Azure DevOps Engineer, UI/UX enthusiast." />
+    <title>Tobias Eriksson CV</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="cv.css">
@@ -16,356 +16,134 @@
 
 <body>
     <nav>
-        <a id="switchLangBtn" href="#" tabindex="0" title="View in English"><i class="fas fa-globe"></i></a>
-        <a id="themeBtn" href="#" tabindex="0" title="Växla till mörkt tema"><i class="fas fa-moon"></i></a>
+        <a id="switchLangBtn" href="#"><i class="fas fa-globe"></i></a>
+        <a id="themeBtn" href="#"><i class="fas fa-moon"></i></a>
     </nav>
     <main>
         <header>
             <aside>
-                <img src="portrait1.png" alt="Photo of Tobias Eriksson" />
-                <ul class="contact-info">
-                    <li>
-                        <a href="mailto:toberi@outlook.com"><i class="fas fa-envelope"></i>
-                            toberi@outlook.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+46706219593"><i class="fas fa-phone"></i> +46706219593</a>
-                    </li>
-                </ul>
-                <ul class="social-media">
-                    <li>
-                        <a class="default-link" aria-label="github profile" title="Github" href="https://github.com/ToberiTE" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="print-link" aria-label="github profile" title="Github" href="https://github.com/ToberiTE" target="_blank"><i class="fab fa-github"></i> github.com/ToberiTE</a>
-                    </li>
-                    <li>
-                        <a class="default-link" aria-label="linkedin profile" title="Linkedin" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a class="print-link" aria-label="linkedin profile" title="Linkedin" href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/toberi/</a>
-                    </li>
-                </ul>
+                <img src="portrait.png" alt="portrait" />
             </aside>
             <article>
-                <h1>Tobias Eriksson</h1>
-                <h2 data-t="1">Systemutvecklare | DevOps</h2>
-                <section>
-                    <p>C# &bull; .NET &bull; React &bull; Typescript &bull; SQL</p>
-                    <p>Azure DevOps &bull; Azure Kubernetes Service</p>
-                    <p data-t="2">Säker infrastruktur &bull; Databasmigrering &bull; Generativ AI</p>
-                </section>
+                <h1>Tobias <span>Eriksson</span></h1>
+                <div class="contact-info-wrapper">
+                    <ul class="contact-info">
+                        <li><a href="#"><i class="fas fa-envelope"></i> toberi@outlook.com</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +46706219593</a></li>
+                        <li data-t="loc"><i class="fas fa-map-marker-alt"></i> Örnsköldsvik, Sverige</li>
+                    </ul>
+                    <ul class="contact-info">
+                        <li><a href="https://www.linkedin.com/in/toberi/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/toberi</a></li>
+                        <li><a href="https://github.com/ToberiTE" target="_blank"><i class="fab fa-github"></i> github.com/ToberiTE</a></li>
+                    </ul>
+                </div>
             </article>
         </header>
         <section class="content">
             <article>
-                <h2 data-t="3">Erfarenhet</h2>
+                <h2 data-t="a_h2">Erfarenhet</h2>
                 <ul>
                     <li>
-                        <h4 data-t="4">AFRY, Systemutvecklare.</h4>
-                        <span data-t="5">Heltid, Aug 2022 - Mar 2023</span>
-                        <p data-t="6">
-                            Webbutveckling fullstack i ProTAK, en programvara för produktionsoptimering.
-                        </p>
-                        <p data-t="7">
-                            C# &bull;
-                            .NET &bull;
-                            Typescript &bull;
-                            React &bull;
-                            Knockout &bull;
-                            Jquery &bull;
-                            Entity Framework &bull;
-                            PLSQL &bull;
-                            D3 &bull;
-                            HTML &bull;
-                            SCSS &bull;
-                            Azure DevOps &bull;
-                            Agila metoder
-                        </p>
+                        <div class="space-between">
+                            <h4 data-t="a_h4_1">AFRY, Systemutvecklare</h4>
+                            <span>08/2022 - 03/2023</span>
+                        </div>
+                        <ul class="styled-ul">
+                            <li data-t="a_ul_1_li_1">Webbutveckling i ProTAK, en programvara för produktionsoptimering.</li>
+                            <li data-t="a_ul_1_li_2">Utvecklade BI rapport lösning åt kund för att förenkla redovisning av produktionsdata.</li>
+                            <li data-t="a_ul_1_li_3">Arbete med modernisering av komponenter från KnockoutJS till ReactJS och diverse supportärenden.</li>
+                        </ul>
                     </li>
                     <li>
-                        <h4 data-t="8">Flexeurope, Teknikinformatör.</h4>
-                        <span data-t="9">Heltid, Feb 2021 - Jul 2021</span>
-                        <p data-t="10">
-                            Agilt arbete i internationellt team med författande av manualer för
-                            webb/klientprogramvara, APIer & integrationer.
-                        </p>
-                        <p data-t="11">
-                            Manuell testning av programvara och test av funktionalitet för dokumentation.
-                        </p>
-                        <p data-t="12">
-                            Installationer & konfiguration av programvara och tillhörande system, databaser m.m.
-                        </p>
-                        <p data-t="13">
-                            Teknisk dokumentation &bull;
-                            Funktionsanalys &bull;
-                            Funktionstester &bull;
-                            Systemkonfiguration &bull;
-                            Agila metoder &bull;
-                            Jira
-                        </p>
+                        <div class="space-between">
+                            <h4 data-t="a_h4_2">Flexeurope, Teknikinformatör</h4>
+                            <span>02/2021 - 07/2021</span>
+                        </div>
+                        <ul class="styled-ul">
+                            <li data-t="a_ul_2_li_1">Slutförde arbete med författande av programvarumanualer för äldre och fram till aktuella versioner.</li>
+                            <li data-t="a_ul_2_li_2">Systemkonfiguration och test av funktionalitet i programvara för att möjliggöra dokumentation.</li>
+                        </ul>
                     </li>
                     <li>
-                        <h4 data-t="14">CoreIT, Systemutvecklare.</h4>
-                        <span data-t="15">Heltid, Apr 2018 - Jun 2018, Nov 2018 - Apr 2019</span>
-                        <p data-t="16">
-                            Utveckling av webbapplikation för kunder att prenumerera på driftinformation inom utbud av företagstjänster.
-                        </p>
-                        <p data-t="17">
-                            Utveckling av windows applikation för hantering av projekt och affärsdata.
-                        </p>
-                        <p>
-                            C# &bull;
-                            .NET &bull;
-                            Jquery &bull;
-                            SQL &bull;
-                            HTML &bull;
-                            CSS &bull;
-                            Entity Framework &bull;
-                            Winforms &bull;
-                            TFS
-                        </p>
+                        <div class="space-between">
+                            <h4 data-t="a_h4_3">CoreIT, Systemutvecklare</h4>
+                            <span>10/2018 - 04/2019</span>
+                        </div>
+                        <ul class="styled-ul">
+                            <li data-t="a_ul_3_li_1">Utvecklade webbapplikation för kunder att prenumerera på driftinformation om företagstjänster.</li>
+                            <li data-t="a_ul_3_li_2">Vidaretveckling av applikation för projekthantering.</li>
+                        </ul>
                     </li>
                     <li>
-                        <h4 data-t="18">Projekt, NetViz.</h4>
-                        <span>Nov 2023 - Jan 2024</span>
-                        <p data-t="20">Webbaserad nätverksskanner integrerad med Nmap.</p>
-                        <p data-t="21">Skanna och visualisera nätverk och visa detaljer om anslutna enheter.</p>
-                        <a class="link" referrerpolicy="no-referrer" aria-label="Link to NetViz project" href="https://github.com/ToberiTE/NetViz" target="_blank">
-                            Github
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a class="print-link" referrerpolicy="no-referrer" aria-label="Link to NetViz project" href="https://github.com/ToberiTE/NetViz" target="_blank">
-                            github.com/ToberiTE/NetViz
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <p data-t="22">
-                            React &bull;
-                            Typescript &bull;
-                            .NET &bull;
-                            C# &bull;
-                            Nmap &bull;
-                            D3 &bull;
-                            Redux &bull;
-                            Material UI &bull;
-                            Vite &bull;
-                            Datavisualisering &bull;
-                            Nätverksteknik &bull;
-                            Cybersäkerhet
-                        </p>
+                        <div class="space-between">
+                            <h4 data-t="a_h4_4">Projekt</h4>
+                            <span>11/2023 - 01/2024</span>
+                        </div>
+                        <ul class="styled-ul">
+                            <li data-t="a_ul_4_li_1">Nätverksskanner för att skanna, visualisera nätverk och visa detaljer om anslutna enheter.</li>
+                            <a referrerpolicy="no-referrer" href="https://github.com/ToberiTE/NetViz" target="_blank">github.com/ToberiTE/NetViz</a>
+                        </ul>
                     </li>
                     <li>
-                        <h4 data-t="23">Projekt, Vision.</h4>
-                        <span>Jul 2023 - Nov 2023</span>
-                        <p data-t="25">
-                            Datadriven och användarvänlig SaaS applikation byggd på Azure plattformen för att visualisera data på olika
-                            vis och med stöd av ML skapa dataprognoser. Demo finns tillgänglig på länk nedan, meddela om intresse.
-                        </p>
-                        <a data-t="26" class="link" referrerpolicy="no-referrer" aria-label="Link to Vision website" href="https://vision-client.azurewebsites.net/" target="_blank">
-                            Öppna i ny flik
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a class="print-link" referrerpolicy="no-referrer" aria-label="Link to Vision website" href="https://vision-client.azurewebsites.net/" target="_blank">
-                            vision-client.azurewebsites.net/
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <p>
-                            React &bull;
-                            Redux &bull;
-                            Typescript &bull;
-                            .NET &bull;
-                            C# &bull;
-                            Material UI &bull;
-                            CSS &bull;
-                            CI/CD &bull;
-                            Azure DevOps &bull;
-                            Azure App Services &bull;
-                            Azure SQL Server &bull;
-                            Azure AD &bull;
-                            Python &bull;
-                            Prophet &bull;
-                            Pandas &bull;
-                            EF Core &bull;
-                            Docker &bull;
-                            MSAL &bull;
-                            Vite
-                        </p>
+                        <div class="space-between">
+                            <h4 data-t="a_h4_5">Projekt</h4>
+                            <span>06/2023 - 11/2023</span>
+                        </div>
+                        <ul class="styled-ul">
+                            <li data-t="a_ul_5_li_1">Applikation för att visualisera data och med stöd av ML skapa prognoser. Meddela mig om åtkomst.</li>
+                            <a referrerpolicy="no-referrer" href="https://vision-client.azurewebsites.net/" target="_blank">vision-client.azurewebsites.net/</a>
+                        </ul>
                     </li>
-                    </br>
+                </ul>
+            </article>
+            <article class="cert-section">
+                <h2 data-t="b_h2">Certifieringar</h2>
+                <span>Microsoft, Applied Skills</span>
+                <ul class="styled-ul">
+                    <li>Develop generative AI solutions with Azure OpenAI Service</li>
+                    <li>Configure secure access to your workloads using Azure networking</li>
+                    <li>Migrate SQL Server workloads to Azure SQL Database</li>
+                    <li>Deploy containers by using Azure Kubernetes Service</li>
+                    <li>Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls</li>
+                    <li>Implement security through a pipeline using Azure DevOps</li>
                 </ul>
             </article>
             <article>
-                <h2 data-t="27">Licenser och certifikat</h2>
+                <h2 data-t="c_h2">Kompetenser</h2>
                 <ul>
-                    <li>
-                        <h4>Develop generative AI solutions with Azure OpenAI Service</h4>
-                        <h5>Microsoft</h5>
-                        <span data-t="28">Utfärdad feb. 2024</span>
-                        <a data-t="link" class="link" referrerpolicy="no-referrer" href="
-                  https://learn.microsoft.com/api/credentials/share/en-us/TobiasEriksson-9607/C0F4A98EA16700ED?sharingId=93A07CDA45FD3986
-                          " target="_blank">
-                            Visa legitimering
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <h4>Configure secure access to your workloads using Azure networking</h4>
-                        <h5>Microsoft</h5>
-                        <span data-t="29">Utfärdad feb. 2024</span>
-                        <a data-t="link" class="link" referrerpolicy="no-referrer" href="
-                          https://learn.microsoft.com/api/credentials/share/en-us/TobiasEriksson-9607/1FA21EEC51FB53CC?sharingId=93A07CDA45FD3986
-                          " target="_blank">
-                            Visa legitimering
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <h4>Migrate SQL Server workloads to Azure SQL Database</h4>
-                        <h5>Microsoft</h5>
-                        <span data-t="30">Utfärdad jan. 2024</span>
-                        <a data-t="link" class="link" referrerpolicy="no-referrer" href="
-                      https://learn.microsoft.com/api/credentials/share/en-us/TobiasEriksson-9607/A702DCFFC62F0042?sharingId=93A07CDA45FD3986
-                      " target="_blank">
-                            Visa legitimering
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <h4>Deploy containers by using Azure Kubernetes Service</h4>
-                        <h5>Microsoft</h5>
-                        <span data-t="31">Utfärdad jan. 2024</span>
-                        <a data-t="link" class="link" referrerpolicy="no-referrer" href="
-                      https://learn.microsoft.com/api/credentials/share/en-us/TobiasEriksson-9607/2F8EAC276E740AD1?sharingId=93A07CDA45FD3986
-                      " target="_blank">
-                            Visa legitimering
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <h4>Secure Azure services and workloads with Microsoft Defender for Cloud regulatory
-                            compliance controls</h4>
-                        <h5>Microsoft</h5>
-                        <span data-t="32">Utfärdad jan. 2024</span>
-                        <a data-t="link" class="link" referrerpolicy="no-referrer" href="
-                      https://learn.microsoft.com/api/credentials/share/en-us/TobiasEriksson-9607/F9F8EB344F1CEBB6?sharingId=93A07CDA45FD3986
-                      " target="_blank">
-                            Visa legitimering
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <h4>Implement security through a pipeline using Azure DevOps</h4>
-                        <h5>Microsoft</h5>
-                        <span data-t="33">Utfärdad dec. 2023</span>
-                        <a data-t="link" class="link" referrerpolicy="no-referrer" href="https://learn.microsoft.com/api/credentials/share/en-us/TobiasEriksson-9607/FEED48F42AEA0CAC?sharingId=93A07CDA45FD3986" target="_blank">Visa legitimering
-                            <i class="fas fa-external-link-alt"></i></a>
-                    </li>
+                    <span data-t="c_span_1">Språk</span>
+                    <li>C#, C++, Typescript, Javascript, CSS, HTML, SQL, PLSQL, Powershell, Bash, JSON, XML, Bicep, Python</li>
+                    <span data-t="c_span_2">Ramverk</span>
+                    <li>.NET, .NET Core, React, Knockout, Jquery, Qt, WPF, Winforms, ASP.NET, EF, MVC, MVVM, MaterialUI</li>
+                    <span data-t="c_span_3">Tekniker & Verktyg</span>
+                    <li>CI/CD, Docker, Redux, Vite, Git, CMake, Jira, Azure DevOps, Azure Networking, Azure OpenAI, Azure Kubernetes Services</li>
+                    <span data-t="c_span_4">Övriga</span>
+                    <li data-t="other_skills">Generativ AI, Automation, Dataanalys, Datavisualisering, Datamigrering, Agila metoder, Funktionsanalys, Testning, Teknisk dokumentation, Systemkonfiguration, Cybersäkerhet, Nätverksinfrastruktur</li>
                 </ul>
             </article>
-            <article>
-                <h2 data-t="34">Kompetenser</h2>
-                <ul>
-                    <li>
-                        <span data-t="35">Språk & ramverk</span>
-                        <p>
-                            C# &bull;
-                            .NET &bull;
-                            React &bull;
-                            Typescript &bull;
-                            Javascript &bull;
-                            SQL &bull;
-                            CSS &bull;
-                            Knockout &bull;
-                            Jquery &bull;
-                            Node &bull;
-                            WPF &bull;
-                            Winforms &bull;
-                            Webapi &bull;
-                            Powershell &bull;
-                            Bash &bull;
-                            Python &bull;
-                            HTML &bull;
-                            ASP.NET &bull;
-                            MVC &bull;
-                            MVVM &bull;
-                            Java &bull;
-                            Spring Framework
-                        </p>
-                    </li>
-                    <li>
-                        <span data-t="36">Tekniker</span>
-                        <p>
-                            OpenAI &bull;
-                            EF Core &bull;
-                            CI/CD &bull;
-                            Docker &bull;
-                            Redux &bull;
-                            Vite &bull;
-                            Git &bull;
-                            Microsoft Azure &bull;
-                            Azure DevOps &bull;
-                            Azure App Services &bull;
-                            Azure SQL Server &bull;
-                            Azure AD &bull;
-                            Azure Kubernetes Services &bull;
-                            MSAL &bull;
-                            UX-design &bull;
-                            Material UI &bull;
-                            Jira &bull;
-                            Maven &bull;
-                            Linux
-                        </p>
-                    </li>
-                    <li>
-                        <span data-t="37">Övriga</span>
-                        <p data-t="38">
-                            Webbutveckling &bull;
-                            Frontend &bull;
-                            Backend &bull;
-                            Mjukvaruutveckling &bull;
-                            Generativ AI &bull;
-                            Automation &bull;
-                            Dataanalys &bull;
-                            Datavisualisering &bull;
-                            Identitets- och åtkomsthantering (IAM) &bull;
-                            Datamigrering &bull;
-                            Agila metoder &bull;
-                            Funktionsanalys &bull;
-                            Funktionstester &bull;
-                            Enhetstester &bull;
-                            Teknisk dokumentation &bull;
-                            Systemkonfiguration &bull;
-                            Cybersäkerhet &bull;
-                            Nätverksinfrastruktur
-                        </p>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h2 data-t="39">Utbildning</h2>
-                <ul>
-                    <li>
-                        <h4 data-t="40">Yrkeshögskoleexamen</h4>
-                        <span>2017 - 2019, YrkesAkademin</span>
-                        <p data-t="41">Systemutvecklare .NET</p>
-                    </li>
-                    <li>
-                        <h4 data-t="42">Kurser</h4>
-                        <span>2016 - 2017, Miroi</span>
-                        <p data-t="43">Nätverkssäkerhet</p>
-                        <p data-t="44">Nätverksteknik</p>
-                        <p data-t="45">Nätverksteknologier</p>
-                        <p data-t="46">Nätverksadministration</p>
-                        <p data-t="47">Administration av nätverks- och serverutrustning</p>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h2 data-t="48">Övrigt</h2>
-                <ul>
-                    <li>
-                        <p data-t="49">Referenser lämnas på begäran.</p>
-                        <p data-t="50">Körkort B</p>
-                        <p data-t="51">Engelska, professionell nivå.</p>
-                    </li>
-                </ul>
-            </article>
+            <div class="flex">
+                <article>
+                    <h2 data-t="d_h2">Utbildning</h2>
+                    <ul>
+                        <li>
+                            <div class="space-between">
+                                <h4 data-t="d_h4_1">Yrkeshögskoleexamen</h4>
+                                <span>2017 - 2019</span>
+                            </div>
+                            <p data-t="d_p_1">Systemutvecklare .NET</p>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h2 data-t="e_h2">Övrigt</h2>
+                    <ul>
+                        <li>
+                            <p data-t="e_p_1">Körkort B</p>
+                            <p data-t="e_p_2">Engelska, professionell nivå.</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
 </body>

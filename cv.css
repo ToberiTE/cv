@@ -12,6 +12,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -41,21 +43,14 @@ header article {
   display: grid;
 }
 
-header section,
-.social-media,
-.content {
-  gap: 1rem;
-}
-
 main {
   place-items: center;
-  width: 100%;
 }
 
 body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.5;
+  line-height: 1.4;
   letter-spacing: 1px;
   background-color: var(--body-bg);
   color: var(--body-primary);
@@ -68,61 +63,58 @@ header {
   grid-auto-flow: column;
   gap: 6rem;
   background-color: var(--header-bg);
-  padding-block: 2rem;
   place-content: center;
-  text-align: center;
+  padding-block: 1.5rem;
   margin-bottom: 2rem;
 
-  & article {
-    place-items: start;
-  }
+  .contact-info-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 3rem;
 
-  & h2 {
-    text-transform: uppercase;
-    font-size: 0.925rem;
-    letter-spacing: 3px;
-    margin-bottom: 2em;
-  }
-
-  & section {
-    align-items: start;
-    text-align: start;
+    .contact-info {
+      padding: 0;
+      align-items: start;
+      gap: 0.5rem;
+    }
   }
 }
 
-aside img {
-  height: 140px;
+img {
+  height: 100px;
 }
 
-header article *,
-.social-media,
-.content article:not(:last-child)::after,
-h5 {
-  margin: 0;
-}
-
-article h1,
-header section,
-aside a,
-.content h2,
-.content p,
-.link {
+h1,
+h2,
+a,
+p,
+li {
   font-weight: 300;
 }
 
-header h2,
-h4,
-h5 {
+h4 {
   font-weight: 400;
 }
 
-article h1 {
-  font-size: 1.8rem;
+h1 {
+  font-size: 18px;
 
+  span {
+    font-size: inherit;
+    font-weight: 400;
+  }
+}
+
+* {
+  font-size: 14px;
+}
+
+h1,
+h2 {
   &::after {
     content: "";
     display: block;
-    margin-block: 0.45em;
+    margin-block: 0.15em;
     height: 1px;
     width: 3em;
     background-color: var(--divider);
@@ -130,129 +122,131 @@ article h1 {
   }
 }
 
-.contact-info {
-  padding: 0;
-  align-items: start;
-  gap: 0.5rem;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0 0 0;
-
-  & i {
-    font-size: 1.8rem;
-  }
-}
-
-.print-link {
-  display: none;
-}
-
 a {
   text-decoration: none;
   color: var(--body-primary);
   outline: none;
-
-  &:hover,
-  &:focus-visible {
-    opacity: 0.5;
-  }
-}
-
-aside a {
-  letter-spacing: 0.04rem;
 }
 
 .content {
   max-width: 900px;
-
-  & h2 {
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-    line-height: 1.1;
-    padding: 1rem 0;
-  }
-
-  & p {
-    font-size: 1rem;
-    margin-block: 0.75rem;
-  }
 }
 
 ul {
   list-style: none;
-  padding-left: 0.8rem;
-  gap: 0.75rem;
+  gap: 0.35rem;
 }
 
-.content article:nth-of-type(3) ul {
+.styled-ul {
+  list-style-type: initial;
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+section {
+  margin-inline: 1.5rem;
+  gap: 1.5rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
   gap: 2rem;
-}
 
-.content article:not(:last-child)::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: var(--divider);
-  opacity: 0.65;
-}
-
-h4 {
-  font-size: 1.125rem;
-  margin-bottom: 0.25rem;
-}
-
-h5 {
-  font-size: 0.975rem;
-  margin-bottom: 0.5rem;
-}
-
-span {
-  font-size: 0.85rem;
-  font-weight: 200;
-}
-
-.link {
-  font-size: 15px;
-  color: var(--link-primary);
-  border: 1px solid var(--link-border);
-  border-radius: 100vw;
-  margin-block: 0.75rem;
-  display: block;
-  width: fit-content;
-  padding: 0.25rem 1rem;
-
-  & i {
-    margin-left: 0.25rem;
+  article {
+    width: 50%;
   }
 }
 
-.fa-external-link-alt {
-  opacity: 0.8;
+* {
+  font-size: 14px;
+}
+
+h2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+
+span {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+nav {
+  gap: 0.5rem;
+
+  i {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 40em) {
   header {
-    grid-auto-flow: dense;
-    place-items: center;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1.5rem;
     gap: 2rem;
-    padding-inline: 1rem;
 
-    & article * {
-      place-self: center;
-      text-align: center;
+    aside {
+      justify-self: center;
     }
 
-    & section {
-      padding-top: 2rem;
+    .contact-info-wrapper {
+      flex-direction: column;
+      gap: 1rem;
+
+      .contact-info * {
+        font-size: 12px;
+      }
     }
   }
 
-  article h1::after {
-    margin-inline: auto;
+  body {
+    padding-bottom: 2rem;
+  }
+
+  section {
+    margin-inline: 1.5rem;
+    gap: 2rem;
+  }
+
+  .space-between {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .text {
+    justify-content: space-between;
+  }
+
+  article {
+    width: 100% !important;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  ul {
+    gap: 1rem;
   }
 }
 
@@ -266,78 +260,34 @@ span {
   }
 
   header {
-    width: 95%;
-    margin-top: 2rem;
+    padding-inline: 1.6cm;
+    place-content: start;
+  }
 
-    article h1::after {
-      margin-left: 0;
+  nav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    gap: 4rem;
+
+    .contact-info-wrapper {
+      flex-direction: row;
+      gap: 3rem;
+
+      .contact-info {
+        flex-direction: column;
+        place-self: end;
+      }
     }
   }
 
   * {
+    font-size: 12px;
+  }
+
+  h2 {
     font-size: 14px;
-  }
-
-  nav,
-  .link {
-    display: none;
-  }
-
-  .contact-info,
-  .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 0.25rem;
-    margin-left: 2rem;
-  }
-
-  .default-link {
-    display: none;
-  }
-
-  i {
-    font-size: 16px !important;
-  }
-
-  .print-link {
-    display: initial;
-  }
-
-  article {
-    break-inside: avoid;
-
-    & h1::after {
-      margin-inline: auto;
-    }
-  }
-
-  section h2 {
-    font-size: 15px;
-    margin-block: 0.5rem;
-  }
-
-  .content article:nth-of-type(3) ul {
-    gap: 0.5rem;
-
-    & li {
-      margin-block: 0;
-    }
-  }
-
-  section ul li {
-    margin-block: 0.45rem;
-  }
-
-  .content article:first-child::after {
-    display: none;
-  }
-
-  h2,
-  h4,
-  ul {
-    margin: 0;
-    padding: 0;
-    gap: 0;
   }
 }
